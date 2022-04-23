@@ -36,7 +36,7 @@
 input[type=button] {
     height: 2.5rem;
     border: 1 px solid bisque;
-    background-color: beige; 
+    background-color: rgba(0, 127, 231, 0.699); 
     border-radius: 0px;
 }
 
