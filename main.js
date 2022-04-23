@@ -9,6 +9,38 @@ const bombDisplay = document.getElementById("bombs");
 const timeDisplay = document.getElementById("timer");
 let isEndGame = false;
 
+
+mc.addEventListener('dragstart', (e) => { e.preventDefault(); return false; })
+
+// document.addEventListener("mousedown", () => { console.log("ouse dowm"); });
+
+/*
+var onlongtouch;
+var timer;
+var touchduration = 500;
+
+mc.addEventListener('touchstart', touchstart);
+mc.addEventListener('touchend', touchend);
+
+function touchstart() {
+    console.log("touch start");
+    timer = setTimeout(onlongtouch, touchduration);
+}
+
+function touchend() {
+    console.log('touch end');
+    if (timer)
+        clearTimeout(timer);
+}
+
+onlongtouch = function () {
+    if (timer)
+        clearTimeout(timer); 
+
+    console.log("long touchj");
+};
+*/
+
 startNewGame(9, 9, 10);
 
 function startNewGame(cols, rows, bombs) {
@@ -159,6 +191,8 @@ function getRandomIntInclusive(min, max) {
 }
 
 function cellClick(cell) {
+    console.log("cellclick");
+
     if (isEndGame === true)
         return;
 

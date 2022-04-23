@@ -26,8 +26,9 @@
     justify-content: space-between;
     /* border: 0px solid grey; */
     border-bottom: 2px solid grey;
-    min-width: 500px;
-    max-width: 600px;
+    /* min-width: 500px;*/
+    max-width: 600px; 
+    width: 100vw;
     margin: 0 auto;
     padding: 20px 0px 10px 0px;
 }
@@ -36,7 +37,7 @@ input[type=button] {
     height: 2.5rem;
     border: 1 px solid bisque;
     background-color: beige; 
-
+    border-radius: 0px;
 }
 
 .title {
@@ -55,7 +56,7 @@ input[type=button] {
 
 .newgame {
     font-weight: normal;
-    padding: 10px 15px;
+    padding: 0px 5px;
 }
 
 .gameContainer {
@@ -79,6 +80,7 @@ input[type=button] {
 
 div p {
      display: none;   
+     user-select: none;
 }
 
 .clicked {
