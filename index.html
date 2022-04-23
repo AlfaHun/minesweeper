@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/segment7" type="text/css" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal2.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <div class="menu">
+        <div><input type="button" class="newgame" onclick="startNewGame(9, 9, 10)" value="BEGINNER"></div>
+        <div><input type="button" class="newgame" onclick="startNewGame(16, 16, 40)" value="INTERMEDIATE"></div>
+        <div><input type="button" class="newgame" onclick="startNewGame(30, 16, 99)" value="EXPERT"></div>
+
+    </div>
+    <div class="main">
+        <div class="title">
+            <div id="bombs" class="headsup"></div>
+            <!-- <div><input type="button" class="newgame" onclick="startNewGame(9, 9, 10)" value="BEGINNER"></div>
+            <div><input type="button" class="newgame" onclick="startNewGame(16, 16, 40)" value="INTERMEDIATE"></div>
+            <div><input type="button" class="newgame" onclick="startNewGame(30, 16, 99)" value="EXPERT"></div> -->
+            <div id="timer" class="headsup"></div>
+        </div>
+        <div class="gameContainer"></div>
+    </div>
+
+    <div id="open-modal" class="modal-window">
+        <div id="win-lost" onclick="closeModal()" class="modal-win">
+            <!-- <a href="#" title="Close" class="modal-close">Close</a> -->
+            <!-- <span class="modal-close" onclick="closeModal()">&times;</span> -->
+            <h1 id="modal-text">You WIN!</h1>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>

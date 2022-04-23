@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --cols-count: 9;
+    --rows-count: 9;
+}
+
+.main {
+    font-size: 22px;
+    font-weight: bold;
+    width: calc(var(--cols-count) * 32px + 8px);
+    height: calc(var(--rows-count) * 32px + 8px);
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    /* border: 0px solid grey; */
+    border-bottom: 2px solid grey;
+    min-width: 500px;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px 0px 10px 0px;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    border: 4px solid grey;
+}
+
+.title div {
+    height: 30px;
+    background-color: aliceblue;
+    display: flex; 
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.newgame {
+    font-weight: normal;
+    padding: 10px 15px;
+}
+
+.gameContainer {
+    width: 100%;
+    height: 100%; 
+    border: 4px solid grey; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cell {
+    width: 32px;
+    height: 32px;
+    background-color: lightgrey;
+    border-style: outset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div p {
+     display: none;   
+}
+
+.clicked {
+     border-style: inset;
+}
+
+.clicked p {
+    display: block;
+}
+
+.bomb {
+    background-color: brown;
+}
+
+.headsup {
+    color: red;
+    font-family: 'Segment7Standard';
+    font-weight: normal;
+    padding-top: 3px;
+}
+
+.color0 {
+    color: transparent;
+}
+
+.color1 {
+    color: blue;
+}
+
+.color2 {
+    color: green;
+}
+
+.color3 {
+    color: red;
+}
+
+.color4 {
+    color: rgb(1, 1, 107);
+}
+
+.color5 {
+    color: brown;
+}
+
+.color6 {
+    color: magenta;
+}
+
+.color7 {
+    color: black;
+}
