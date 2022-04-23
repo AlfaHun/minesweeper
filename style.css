@@ -32,19 +32,26 @@
     padding: 20px 0px 10px 0px;
 }
 
+input[type=button] {
+    height: 2.5rem;
+    border: 1 px solid bisque;
+    background-color: beige; 
+
+}
+
 .title {
     display: flex;
     justify-content: space-between;
     border: 4px solid grey;
 }
-
+/* 
 .title div {
     height: 30px;
     background-color: aliceblue;
     display: flex; 
     align-items: center;
     margin: 0px 10px;
-}
+} */
 
 .newgame {
     font-weight: normal;
@@ -91,6 +98,13 @@ div p {
     font-family: 'Segment7Standard';
     font-weight: normal;
     padding-top: 3px;
+ 
+
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    margin: 0px 10px;
+
 }
 
 .color0 {
